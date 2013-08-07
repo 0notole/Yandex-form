@@ -1,34 +1,42 @@
-* {margin: 0; padding: 0; font-family: "Arial", sans-serif; font-size: 13px;}
-
-.container {width: 480px; margin: 0 auto;}
-
-.item {margin: 10px 0; padding: 10px 0 20px 0; width: 100%; border-bottom: 1px dashed #ccc; font-size: 0;}
-.minimized {height: 50px;}
-
-.content {margin-left: auto; display: inline-block;
-	width: 395px;
-	overflow: hidden;
-	position: relative;
-	z-index: 1;
-	margin-left: auto;
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Arial", sans-serif;
+	font-size: 13px
 }
 
-.content .overlay {position: absolute; bottom: 0; z-index: 2;}
+a {color: #0066CC;}
+a:visited {color: #6633CC;}
+a:hover {color: #FF3333;}
 
-.overlay {background: url("../img/overlay.png") repeat-x bottom; height: 30px; width: 100%; display: none;}
+.container {width: 480px; margin: 0 auto}
 
-.content p {padding: 5px 0;}
+.title {text-align: center; padding: 20px 0;}
+.title span {font-size: 50px; font-weight: bold;}
 
-.text {color: #2d2d2d; padding-bottom: 5px; font-weight: bold;}
+.item {margin: 10px 0; padding: 10px 0 20px 0; width: 100%; border-bottom: 1px dashed #ccc; font-size: 0}
 
-.number {display: inline-block; vertical-align: top; font-size: 40px; color: #ccc; font-weight: bold; width: 80px; text-align: center;}
+.minimized {height: 50px}
 
-.minimize {margin: 20px auto 0 auto; opacity: 0.4; display: block; background-image: url('../img/arrows.png'); width: 30px; height: 16px;}
-.minimize:hover {opacity: 0.2;}
-.minimize.up {background-position: 0 -32px;}
-.minimize.down {background-position: 0 -16px;}
+.content {margin-left: auto; display: inline-block; width: 395px; overflow: hidden; position: relative; z-index: 1; margin-left: auto}
+.overlay {background: url("../img/overlay.png") repeat-x bottom; height: 30px; width: 100%; display: none; position: absolute; bottom: 0; z-index: 2}
 
-textarea {outline: none; width: 380px; height: 100px; resize: vertical; display: block; margin-top: 10px; padding: 5px;}
+.content p {padding: 5px 0}
 
-.progress-bar {width: 200px; height: 10px; overflow: hidden; border: 1px solid black; -webkit-border-radius: 5px; -moz-border-radius: 5px; margin: 20px auto; border-radius: 5px;}
-.progress-bar .inner {width: 0; height: 10px; background: #238B47;}
+.text {color: #2d2d2d; padding-bottom: 5px; font-weight: bold}
+
+.text ul {
+	padding-left: 40px;
+}
+
+.number {display: inline-block; vertical-align: top; font-size: 40px; color: #ccc; font-weight: bold; width: 80px; text-align: center}
+
+.minimize {margin: 20px auto 0 auto; opacity: 0.4; display: block; background-image: url('../img/arrows.png'); width: 30px; height: 16px}
+.minimize:hover {opacity: 0.2}
+.minimize.up {background-position: 0 -32px}
+.minimize.down {background-position: 0 -16px}
+
+textarea {outline: none; width: 380px; height: 100px; resize: vertical; display: block; margin-top: 10px; padding: 5px}
+
+.progress-bar {width: 200px; height: 10px; overflow: hidden; border: 1px solid black; -webkit-border-radius: 5px; -moz-border-radius: 5px; margin: 20px auto; border-radius: 5px}
+.progress-bar .inner {width: 0; height: 10px; background: #238B47}

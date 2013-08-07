@@ -1,14 +1,5 @@
 $(document).ready(function(){
 	$("textarea").on("focusout", function(){
-		/*
-var text = $(this).val(),
-			amount = $(this).data('amount'),
-			ratio = 0;
-		if(amount == undefined) amount = 512;
-		if(text.length >= amount) ratio = 100;
-		else ratio = ((text.length / amount) * 100);
-		$(this).next().html(ratio.toFixed() + "%");
-*/
 		var items = $(".item").length,
 			done = 0;
 		$(".item textarea").each(function(){
@@ -16,6 +7,7 @@ var text = $(this).val(),
 		});
 		$(".progress-bar .inner").animate({"width": (done/items)*100 + "%"});
 	});
+	
 	$("label").on("click", function(){
 		var input = $(this).prev("input[type=checkbox]");
 		input.prop("checked",!input.prop("checked"))
@@ -32,4 +24,12 @@ var text = $(this).val(),
 			}
 		return false;
 	});
+	
+	$("textarea").on("focus", function(){
+		if($(this).parent().hasClass("minimized"))
+			{
+				$(this).parent().next(".minimize").click();
+			}
+	});
+	
 });
