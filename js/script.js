@@ -86,6 +86,12 @@ $(document).ready(function(){
 		return false;
 	});
 	
+	$("input[name=who]").on("keyup", function(){
+		var iam = $(this).val().trim();
+		if(iam != '') $("#iam").html(', ' + iam + ', ');
+		else $("#iam").empty();
+	});
+	
 });
 
 
