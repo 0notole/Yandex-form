@@ -7,11 +7,12 @@ a:hover {color: #FF3333;}
 .container {width: 530px; margin: 0 auto}
 
 .title {text-align: center; padding: 20px 0;}
-.title span {font-size: 50px; font-weight: bold;}
+.title div {font-size: 50px; font-weight: bold;}
 
 .item {margin: 10px 0; padding: 10px 0 20px 0; width: 100%; border-bottom: 1px dashed #ccc; font-size: 0}
 .item:last-child {border: none;}
 .line {font-size: 0; padding-bottom: 10px; line-height: 23px;}
+.line input {overflow: hidden;}
 .line textarea {margin: 0;}
 
 .minimized {height: 50px}
@@ -39,9 +40,12 @@ a:hover {color: #FF3333;}
 
 textarea {outline: none; width: 380px; height: 100px; resize: vertical; display: block; margin-top: 10px; padding: 5px}
 
-.fileButton {float: left; margin-right: 5px; text-align: center; overflow: hidden; width: 100px; height: 19px; border: 1px solid #BCBCBC; line-height: 19px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; background: #ffffff; background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNjZGNkY2QiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+); background: -moz-linear-gradient(top,  #ffffff 0%, #cdcdcd 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#cdcdcd)); background: -webkit-linear-gradient(top,  #ffffff 0%,#cdcdcd 100%); background: -o-linear-gradient(top,  #ffffff 0%,#cdcdcd 100%); background: -ms-linear-gradient(top,  #ffffff 0%,#cdcdcd 100%); background: linear-gradient(to bottom,  #ffffff 0%,#cdcdcd 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cdcdcd',GradientType=0 );}
+.fileButton, .send input {float: left; margin-right: 5px; text-align: center; overflow: hidden; width: 100px; height: 19px; border: 1px solid #BCBCBC; line-height: 19px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; background: #ffffff; background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNjZGNkY2QiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+); background: -moz-linear-gradient(top,  #ffffff 0%, #cdcdcd 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#cdcdcd)); background: -webkit-linear-gradient(top,  #ffffff 0%,#cdcdcd 100%); background: -o-linear-gradient(top,  #ffffff 0%,#cdcdcd 100%); background: -ms-linear-gradient(top,  #ffffff 0%,#cdcdcd 100%); background: linear-gradient(to bottom,  #ffffff 0%,#cdcdcd 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cdcdcd',GradientType=0 );}
 .fileButton input {margin-top: -50px; margin-left:-410px;  -moz-opacity: 0;  filter: alpha(opacity=0);   opacity: 0;  font-size: 150px; height: 100px;}
 #fileName {display: inline-block; overflow: hidden; text-overflow: ellipsis; width: 280px; white-space: nowrap;}
 
 .progress-bar {width: 200px; height: 10px; overflow: hidden; border: 1px solid black; -webkit-border-radius: 5px; -moz-border-radius: 5px; margin: 20px auto; border-radius: 5px}
 .progress-bar .inner {width: 0; height: 10px; background: #238B47}
+
+.send {text-align: center;}
+.send input {margin: 10px 5px; float: none;}

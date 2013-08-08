@@ -78,6 +78,14 @@ $(document).ready(function(){
 		$('span#fileName').html(fileTitle);
 	});
 	
+	$("input.clear").on("click", function(){
+		$("textarea, input").not(":submit").val('');
+		var control = $("input[type=file]");
+		control.replaceWith( control = control.clone( true ) );
+		$("#fileName").empty();
+		return false;
+	});
+	
 });
 
 

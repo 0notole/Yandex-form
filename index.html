@@ -5,12 +5,13 @@
 		<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
 		<script type="text/javascript" src="js/script.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<title>Анкета</title>
 	</head>
 	<body>
 		<div class="container">
 			<div class="title">
-				<span>Анкета</span><br>
-				ШРИ 2013
+				<div>Анкета</div>
+				<span>ШРИ 2013</span>
 			</div>
 			<form action="action.php" method="post" enctype="multipart/form-data" name="myForm">
 			<div class="item">
@@ -215,13 +216,13 @@
 				<div class="line">
 					<div class="left">Имя, Фамилия</div>
 					<div class="content">
-						<input type="text">
+						<input type="text" required="required">
 					</div>
 				</div>
 				<div class="line">
 					<div class="left">Телефон</div>
 					<div class="content">
-						<input type="text">
+						<input type="text" required="required">
 						<div class="hint">Пожалуйста, укажите код города</div>
 					</div>
 				</div>
@@ -251,6 +252,10 @@
 						<p><input type="checkbox" class="required" data-message="Подтвердите, пожалуйста, своё согласие на передачу анкеты с вашими персональными данными."><label class="important"> Я даю свое согласие на передачу в ООО «ЯНДЕКС» резюме и/или анкеты, содержащих мои персональные данные, и согласен с тем, что они будут храниться в ООО «ЯНДЕКС» в течение 5 лет и будут обрабатываться исключительно для целей предложения мне вакансий группы компаний «ЯНДЕКС», в соответствии с Федеральным законом «О персональных данных».</label><div class="hint"></div></p>
 					</div>
 				</div>
+			</div>
+			<div class="item send">
+				<input type="submit" value="Отправить">
+				<input type="submit" class="clear" value="Очистить">
 			</div>
 			</form>
 		</div>
